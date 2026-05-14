@@ -1,3 +1,5 @@
+**如果代码需要保密，请谨慎评估。**
+
 # 工具介绍
 
 该工具是面向三方库鸿蒙化适配的自动化工作流工具，核心用于 Flutter 插件、React Native 插件以及原生 Android 三方库向 HarmonyOS 的迁移适配。
@@ -34,7 +36,7 @@ OpenHarmony 版 Flutter 环境搭建可参考：[环境搭建指导](https://git
 
 环境中执行 `flutter doctor`，检查当前是否已有鸿蒙平台支持。
 
-![Flutter doctor 检查鸿蒙平台支持](screenshots/flutter-doctor-ohos-support.png)
+<img width="2312" height="648" alt="Flutter doctor 检查鸿蒙平台支持" src="screenshots/flutter-doctor-ohos-support.png" />
 
 ## 3. 鸿蒙工具链环境准备
 
@@ -142,7 +144,7 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 - **配置模型**：在 `.config\opencode\opencode.json` 中（具体以 opencode 实际配置文件路径为准），配置 opencode 使用的模型及 apiKey
 - **指定模型**：`adapt-workflow\data\model-tiers.json`，修改 opencode 字段，按照 `provider\model` 格式
 
-![API Key 配置](screenshots/api-key.png)
+<img width="1569" height="575" alt="API Key 配置" src="screenshots/api-key.png" />
 
 ## 6. 签名替换（非必选）
 
@@ -172,56 +174,56 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 1. **选择 Flutter -> 转鸿蒙**
 
-   ![选择 Flutter 转鸿蒙](screenshots/flutter-to-harmony-selection.png)
+   <img width="1442" height="334" alt="选择 Flutter 转鸿蒙" src="screenshots/flutter-to-harmony-selection.png" />
 
 2. **添加插件代码包**
    
    可以选择从 Pub.dev 中下载 Flutter 插件，也可以从 GitHub 上下载
 
-   ![添加 Flutter 插件代码包](screenshots/flutter-plugin-source-selection.png)
+   <img width="2765" height="1263" alt="添加 Flutter 插件代码包" src="screenshots/flutter-plugin-source-selection.png" />
 
 3. **任务执行**
    
    选择对应的插件，进行任务执行
 
-   ![执行 Flutter 插件适配任务](screenshots/flutter-plugin-task-execution.png)
+   <img width="2752" height="1236" alt="执行 Flutter 插件适配任务" src="screenshots/flutter-plugin-task-execution.png" />
 
 4. **查看任务执行进展**
 
-   ![查看 Flutter 插件适配进展](screenshots/flutter-plugin-task-progress.png)
+   <img width="2868" height="584" alt="查看 Flutter 插件适配进展" src="screenshots/flutter-plugin-task-progress.png" />
 
 5. **生成的代码工程示例**
 
-   ![Flutter 插件适配生成的鸿蒙工程](screenshots/flutter-generated-ohos-project.png)
+   <img width="376" height="609" alt="Flutter 插件适配生成的鸿蒙工程" src="screenshots/flutter-generated-ohos-project.png" />
 
 ### 3.2 原生三方库鸿蒙适配操作示意
 
 1. **选择 Android SDK -> 转鸿蒙**
-![选择 Android SDK 转鸿蒙](screenshots/android-sdk-to-harmony-selection.png)
+<img width="2903" height="199" alt="选择 Android SDK 转鸿蒙" src="screenshots/android-sdk-to-harmony-selection.png" />
 
 2. **添加原生三方库包**
    可以选择本地上传代码包，也可以从 GitHub 上下载
-![添加原生三方库代码包](screenshots/android-library-source-selection.png)
+<img width="2743" height="226" alt="添加原生三方库代码包" src="screenshots/android-library-source-selection.png" />
 
 3. **任务执行并查看进展**
-![执行原生三方库适配任务](screenshots/android-library-task-execution.png)
-![查看原生三方库适配进展](screenshots/android-library-task-progress.png)
+<img width="2811" height="227" alt="执行原生三方库适配任务" src="screenshots/android-library-task-execution.png" />
+<img width="3044" height="934" alt="查看原生三方库适配进展" src="screenshots/android-library-task-progress.png" />
 
 4. **生成的代码工程示例**
 
-![原生三方库适配生成的鸿蒙工程](screenshots/android-generated-ohos-project.png)
+<img width="334" height="588" alt="原生三方库适配生成的鸿蒙工程" src="screenshots/android-generated-ohos-project.png" />
 
 ### 3.3 React Native 插件鸿蒙适配操作示意
 
 1. **选择 React Native -> 转鸿蒙**
-![选择 React Native 转鸿蒙](screenshots/react-native-to-harmony-selection.png)
+<img width="2745" height="696" alt="选择 React Native 转鸿蒙" src="screenshots/react-native-to-harmony-selection.png" />
 
 2. **添加RN插件包**
-![添加 React Native 插件代码包](screenshots/react-native-plugin-source-selection.png)
+<img width="3116" height="209" alt="添加 React Native 插件代码包" src="screenshots/react-native-plugin-source-selection.png" />
 
 3. **任务执行并查看进展**
-![查看 React Native 插件适配进展](screenshots/react-native-task-progress.png)
+<img width="1416" height="357" alt="查看 React Native 插件适配进展" src="screenshots/react-native-task-progress.png" />
 
 4. **生成的代码工程示例：**
 
-![React Native 插件适配生成的鸿蒙工程](screenshots/react-native-generated-ohos-project.png)
+<img width="376" height="621" alt="React Native 插件适配生成的鸿蒙工程" src="screenshots/react-native-generated-ohos-project.png" />
