@@ -34,7 +34,7 @@ OpenHarmony 版 Flutter 环境搭建可参考：[环境搭建指导](https://git
 
 环境中执行 `flutter doctor`，检查当前是否已有鸿蒙平台支持。
 
-<img width="2312" height="648" alt="image" src="https://github.com/user-attachments/assets/090a970b-c590-4b13-8ed4-696e41fd2009" />
+![Flutter doctor 检查鸿蒙平台支持](screenshots/flutter-doctor-ohos-support.png)
 
 ## 3. 鸿蒙工具链环境准备
 
@@ -142,7 +142,7 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 - **配置模型**：在 `.config\opencode\opencode.json` 中（具体以 opencode 实际配置文件路径为准），配置 opencode 使用的模型及 apiKey
 - **指定模型**：`adapt-workflow\data\model-tiers.json`，修改 opencode 字段，按照 `provider\model` 格式
 
-<img width="1569" height="575" alt="image" src="https://github.com/user-attachments/assets/c9b2ab0e-0485-4ab5-9602-a89976650714" />
+![API Key 配置](screenshots/api-key.png)
 
 ## 6. 签名替换（非必选）
 
@@ -172,56 +172,56 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 1. **选择 Flutter -> 转鸿蒙**
 
-   <img width="1442" height="334" alt="image" src="https://github.com/user-attachments/assets/2b8d5559-b8d8-45e8-aa5e-fd48343a1dc1" />
+   ![选择 Flutter 转鸿蒙](screenshots/flutter-to-harmony-selection.png)
 
 2. **添加插件代码包**
    
    可以选择从 Pub.dev 中下载 Flutter 插件，也可以从 GitHub 上下载
 
-   <img width="2765" height="1263" alt="image" src="https://github.com/user-attachments/assets/18681433-cb5f-4064-9ea1-9d0cdcd1ca69" />
+   ![添加 Flutter 插件代码包](screenshots/flutter-plugin-source-selection.png)
 
 3. **任务执行**
    
    选择对应的插件，进行任务执行
 
-   <img width="2752" height="1236" alt="image" src="https://github.com/user-attachments/assets/3d004a51-3714-4de5-ad29-0a10b17825ff" />
+   ![执行 Flutter 插件适配任务](screenshots/flutter-plugin-task-execution.png)
 
 4. **查看任务执行进展**
 
-   <img width="2868" height="584" alt="image" src="https://github.com/user-attachments/assets/be005a39-11c8-49b0-bf63-d543ee1c4dd6" />
+   ![查看 Flutter 插件适配进展](screenshots/flutter-plugin-task-progress.png)
 
 5. **生成的代码工程示例**
 
-   <img width="376" height="609" alt="image" src="https://github.com/user-attachments/assets/dc073c70-8e6c-4c1e-a31d-02d2a64d2312" />
+   ![Flutter 插件适配生成的鸿蒙工程](screenshots/flutter-generated-ohos-project.png)
 
 ### 3.2 原生三方库鸿蒙适配操作示意
 
 1. **选择 Android SDK -> 转鸿蒙**
-<img width="2903" height="199" alt="image" src="https://github.com/user-attachments/assets/97a453cb-8685-405b-b706-7bdd41d8ed40" />
+![选择 Android SDK 转鸿蒙](screenshots/android-sdk-to-harmony-selection.png)
 
 2. **添加原生三方库包**
    可以选择本地上传代码包，也可以从 GitHub 上下载
-<img width="2743" height="226" alt="image" src="https://github.com/user-attachments/assets/935efcd0-6645-492f-bdab-09db166dcb02" />
+![添加原生三方库代码包](screenshots/android-library-source-selection.png)
 
 3. **任务执行并查看进展**
-<img width="2811" height="227" alt="image" src="https://github.com/user-attachments/assets/1a529493-d4ff-4a2a-bfc9-428ed5525cc0" />
-<img width="3044" height="934" alt="image" src="https://github.com/user-attachments/assets/ac9acaa2-4968-48b7-b52c-e2888ac20ead" />
+![执行原生三方库适配任务](screenshots/android-library-task-execution.png)
+![查看原生三方库适配进展](screenshots/android-library-task-progress.png)
 
 4. **生成的代码工程示例**
 
-<img width="334" height="588" alt="image" src="https://github.com/user-attachments/assets/8cd706d0-f7e6-4507-83ca-9acae0768cd2" />
+![原生三方库适配生成的鸿蒙工程](screenshots/android-generated-ohos-project.png)
 
 ### 3.3 React Native 插件鸿蒙适配操作示意
 
 1. **选择 React Native -> 转鸿蒙**
-<img width="2745" height="696" alt="image" src="https://github.com/user-attachments/assets/f01677a9-b446-4333-a001-fe7197063b83" />
+![选择 React Native 转鸿蒙](screenshots/react-native-to-harmony-selection.png)
 
 2. **添加RN插件包**
-<img width="3116" height="209" alt="image" src="https://github.com/user-attachments/assets/c4018bb5-d908-4f8e-bda4-5bf13b193111" />
+![添加 React Native 插件代码包](screenshots/react-native-plugin-source-selection.png)
 
 3. **任务执行并查看进展**
-<img width="1416" height="357" alt="image" src="https://github.com/user-attachments/assets/85b0da51-bff6-4d35-a577-c64fefd5503d" />
+![查看 React Native 插件适配进展](screenshots/react-native-task-progress.png)
 
 4. **生成的代码工程示例：**
 
-<img width="376" height="621" alt="image" src="https://github.com/user-attachments/assets/dde74c66-1041-4acd-9c40-32ba7bb560d6" />
+![React Native 插件适配生成的鸿蒙工程](screenshots/react-native-generated-ohos-project.png)
