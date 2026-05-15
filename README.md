@@ -67,6 +67,7 @@ export PATH=$JAVA_HOME/bin:$PATH
 # 配置OpenHarmony SDK, ohpm, hvigor, node
 export TOOL_HOME=/Applications/DevEco-Studio.app/Contents # mac环境
 export DEVECO_SDK_HOME=$TOOL_HOME/sdk # command-line-tools/sdk
+export OHOS_SDK=$TOOL_HOME/sdk/default
 export PATH=$TOOL_HOME/tools/ohpm/bin:$PATH # command-line-tools/ohpm/bin
 export PATH=$TOOL_HOME/tools/hvigor/bin:$PATH # command-line-tools/hvigor/bin
 export PATH=$TOOL_HOME/tools/node/bin:$PATH # command-line-tools/tool/node/bin
@@ -94,12 +95,13 @@ source ~/.zshrc
 
 **2. 配置环境变量**
 
-配置 `OpenHarmony SDK`、`ohpm`、`hvigor`、`node`
+配置 `OpenHarmony SDK`、`OHOS_SDK`、`ohpm`、`hvigor`、`node`
 
 | 变量 | 值 | 作用域 |
 |------|------|--------|
 | `TOOL_HOME` | `<Deveco-studio Path>` | 系统变量 |
 | `DEVECO_SDK_HOME` | `%TOOL_HOME%\sdk` | 系统变量 |
+| `OHOS_SDK` | `%TOOL_HOME%\sdk\default` | 系统变量 |
 | `Path` | `%TOOL_HOME%\tools\ohpm\bin` | 系统变量 |
 | `Path` | `%TOOL_HOME%\tools\hvigor\bin` | 系统变量 |
 | `Path` | `%TOOL_HOME%\tools\node\bin` | 系统变量 |
