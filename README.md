@@ -112,7 +112,7 @@ source ~/.zshrc
 
 - **OpenCode**：需能执行 `opencode` 命令。[下载页面](https://opencode.ai/zh/download)
 
-  建议使用 `npm i -g opencode-ai` 安装，安装目录可以通过 `npm config get prefix` 获取，然后对应的安装目录配置到系统环境变量 PATH 中。
+  推荐使用1.14.24版本，建议使用 `npm i -g opencode-ai@1.14.24` 安装，安装目录可以通过 `npm config get prefix` 获取，然后对应的安装目录配置到系统环境变量 PATH 中。
 
   > 注：如果安装时卡住，通过以下命令切换镜像源：
   > ```bash
